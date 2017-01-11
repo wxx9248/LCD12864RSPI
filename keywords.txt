@@ -1,0 +1,28 @@
+#######################################
+# Syntax Coloring Map For LCD12864RSPI
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+LCD12864RSPI	KEYWORD1	LCD12864RSPI
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin		KEYWORD2
+delay		KEYWORD2
+writeByte	KEYWORD2
+writeCommand	KEYWORD2
+writeData	KEYWORD2
+clear		KEYWORD2
+displayString	KEYWORD2
+displaySig	KEYWORD2
+drawFullScreen	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
