@@ -11,24 +11,24 @@
 #include <avr/pgmspace.h>
 #include <inttypes.h>
 
-
 class LCD12864RSPI
 {
 	private:
 		void delay();
-		static const int DELAYTIME = 80; // 80 ¦Ìs
+		static const uint8_t DELAYTIME = 80; // 80 ¦Ìs
 		uint8_t clockPin, latchPin, dataPin;
 
 	public:
-		LCD12864RSPI(uint8_t, uint8_t, uint8_t);
-		void init(uint8_t, uint8_t, uint8_t);
-		void writeByte(int);
-		void writeCommand(int);
-		void writeData(int);
+		LCD12864RSPI(const uint8_t, const uint8_t, const uint8_t);
+		void init(const uint8_t, const uint8_t, const uint8_t);
+		void writeByte(const uint8_t);
+		void writeCommand(const uint8_t);
+		void writeData(const uint8_t);
 		void clear();
-		void displayString(int, int, uint8_t *, int);
-		void displaySig(int, int, int);
-		void drawFullScreen(uint8_t *);
+		void displayString(const uint8_t, uint8_t, const char *);
+		void displayString(const uint8_t, uint8_t, const char *, const uint8_t);
+		void displaySig(const uint8_t, const uint8_t, const uint8_t);
+		void drawFullScreen(const uint8_t *);
 
 };
 
