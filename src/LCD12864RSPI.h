@@ -8,14 +8,13 @@
 #define _LCD12864RSPI_H
 
 #include <Arduino.h>
-#include <avr/pgmspace.h>
 #include <inttypes.h>
 
 class LCD12864RSPI
 {
 	private:
 		void delay();
-		static const uint8_t DELAYTIME = 80; // 80 ¦Ìs
+		static const uint8_t DELAYTIME = 80; // 80 ï¿½ï¿½s
 		uint8_t clockPin, latchPin, dataPin;
 
 	public:

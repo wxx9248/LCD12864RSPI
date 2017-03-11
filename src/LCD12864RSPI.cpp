@@ -8,10 +8,8 @@
 
 extern "C"
 {
-#include <Arduino.h>
 #include <inttypes.h>
 #include <string.h>
-#include <avr/pgmspace.h>
 }
 
 
