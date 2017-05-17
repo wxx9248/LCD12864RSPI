@@ -6,7 +6,7 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-LCD12864RSPI	KEYWORD1	LCD12864RSPI
+LCD12864RSPI	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
