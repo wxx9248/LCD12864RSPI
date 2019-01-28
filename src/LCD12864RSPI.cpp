@@ -117,7 +117,7 @@ void LCD12864RSPI::displayString(const uint8_t X, uint8_t Y, const char *pstr, c
   }
   writeCommand(Y);
 
-  for (uint8_t i = 0; i < len || pstr + i; i++)
+  for (uint8_t i = 0; i < len && *(pstr + i); i++)
     writeData(*(pstr + i));
 }
 
